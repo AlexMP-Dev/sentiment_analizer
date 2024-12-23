@@ -1,10 +1,10 @@
 
 from typing import List
 import pandas as pd
-import numpy as np
-from collections import Counter
-import matplotlib.pyplot as plt
-from PIL import Image
+#import numpy as np
+#from collections import Counter
+#import matplotlib.pyplot as plt
+#from PIL import Image
 #from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 
 import nltk
