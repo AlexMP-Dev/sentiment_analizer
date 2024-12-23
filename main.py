@@ -2,6 +2,8 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List
 
+import uvicorn
+
 from pln import analisisSentiment, score
 
 app = FastAPI()
@@ -30,3 +32,6 @@ def create_item(item: Item):
         }
     }
 
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
